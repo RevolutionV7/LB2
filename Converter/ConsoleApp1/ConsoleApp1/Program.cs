@@ -25,55 +25,55 @@ namespace Converter
             {
 
                 case 1:
-                    Console.WriteLine("From hryvnia to dollar:");
-                    Console.Write("Enter numbers: ");
+                    Console.WriteLine("Ви обрали купiвлю usd за uah : ");
+                    Console.Write("Введiть вашу суму в uah : ");
                     n = Convert.ToInt32(Console.ReadLine());
                     double u = n / usd;
-                    Console.WriteLine($"Result: {u} dollars.");
+                    Console.WriteLine($"Ви отримаєте {u} usd.");
                     break;
 
                 case 2:
-                    Console.WriteLine("From hryvnia to euro:");
-                    Console.Write("Enter numbers: ");
+                    Console.WriteLine("Ви обрали купiвлю eur за uah : ");
+                    Console.Write("Введiть вашу суму в uah : ");
                     n = Convert.ToInt32(Console.ReadLine());
                     double e = n / eur;
-                    Console.WriteLine($"Result: {e} euros.");
+                    Console.WriteLine($"Ви отримаєте {e} eur.");
                     break;
 
                 case 3:
-                    Console.WriteLine("From hryvnia to ruble:");
-                    Console.Write("Enter numbers: ");
-                    n = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Ви обрали купiвлю rub за uah : ");
+                    Console.Write("Введiть вашу суму в uah : ");
+                     n = Convert.ToInt32(Console.ReadLine());
                     double r = n / rub;
-                    Console.WriteLine($"Result: {r} rubles.");
+                    Console.WriteLine($"Ви отримаєте {r} rub.");
                     break;
 
                 case 4:
-                    Console.WriteLine("From dollar to hryvnia");
-                    Console.Write("Enter numbers: ");
+                    Console.WriteLine("Ви обрали купiвлю uah за usd : ");
+                    Console.Write("Введiть вашу суму в usd : ");
                     n = Convert.ToInt32(Console.ReadLine());
                     Uah = n * usd;
-                    Console.WriteLine($"Result: {Uah} hryvnias.");
+                    Console.WriteLine($"Ви отримаєте {Uah} uah.");
                     break;
 
                 case 5:
-                    Console.WriteLine("From euro to hryvnia:");
-                    Console.Write("Enter numbers: ");
+                    Console.WriteLine("Ви обрали купiвлю uah за eur : ");
+                    Console.Write("Введiть вашу суму в eur : ");
                     n = Convert.ToInt32(Console.ReadLine());
                     Uah = n * eur;
-                    Console.WriteLine($"Result: {Uah} hryvnias.");
+                    Console.WriteLine($"Ви отримаєте {Uah} uah.");
                     break;
 
                 case 6:
-                    Console.WriteLine("From ruble to hryvnia:");
-                    Console.Write("Enter numbers: ");
+                    Console.WriteLine("Ви обрали купiвлю uah за rub : ");
+                    Console.Write("Введiть вашу суму в rub : ");
                     n = Convert.ToInt32(Console.ReadLine());
                     Uah = n * rub;
-                    Console.WriteLine($"Result: {Uah} hryvnias.");
+                    Console.WriteLine($"Ви отримаєте {Uah} uah.");
                     break;
 
                 default:
-                    Console.WriteLine("The range of numbers is within 1 to 6!");
+                    Console.WriteLine("Оберiть операцiю вiд 1 до 6!");
                     break;
             }
             return Uah;
@@ -81,15 +81,15 @@ namespace Converter
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Оберiть потрібну фiнансову операцiю (1-6):");
-            Console.WriteLine("1.Купівля usd за uah;");
-            Console.WriteLine("2.Купівля eur за uah;");
-            Console.WriteLine("3.Купівля rub за uah;");
-            Console.WriteLine("4.Купівля uah за usd;");
-            Console.WriteLine("5.Купівля uah за eur;");
-            Console.WriteLine("6.Купівля uah за rub.");
+            Console.WriteLine("Оберiть потрiбну фiнансову операцiю (1-6):");
+            Console.WriteLine("1.Купiвля usd за uah;");
+            Console.WriteLine("2.Купiвля eur за uah;");
+            Console.WriteLine("3.Купiвля rub за uah;");
+            Console.WriteLine("4.Купiвля uah за usd;");
+            Console.WriteLine("5.Купiвля uah за eur;");
+            Console.WriteLine("6.Купiвля uah за rub.");
 
-            Converter convert = new Converter(41, 40.7, 7.74);
+            Converter convert = new Converter(41, 40.6, 0.34);
             convert.Result();
         }
     }
